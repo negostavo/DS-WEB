@@ -1,0 +1,82 @@
+/* inicio da estilização das bordas*/
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+p.solid {
+    border-style: solid;
+}
+p.double {
+    border-style: double;
+}
+p.groove {
+    border-style: groove;
+}
+p.ridge {
+    border-style: ridge;
+}
+p.inset {
+    border-style: inset;
+}
+p.outset {
+    border-style: outset;
+}
+p.none {
+    border-style: none;
+}
+p.hidden {
+    border-style: hidden;
+}
+p.mix {
+    border-style: dotted dashed solid double;
+}
+/* --- fim da estilização de borda ---*/
+
+
+/*inicio da estilização de margens --- */
+.control-margin{
+    border: 1px solid black;
+    margin: 20px 10% 10px 20%;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+.control-padding{
+    border: 1px solid black;
+    margin: 20px 10% 10px 20%;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+
+/* --- fim do controle de margem --- */
+
+/* --- inicio da manipulaçao de tamanho --- */
+
+.control-height-width{
+    text-align: center;
+    border: 1px solid black;
+    height: 300px;
+    max-width: 300px;
+
+}
+/* --- fim da manipulação de tamanho */
+
+/* --- inicio da manipulação de Divs --- */
+.div-pai{
+    
+    background-color: rgb(149, 236, 249);
+    margin: 20px;
+    height: 300px;
+}
+.div-filho{
+    width: 60%;
+    margin:auto;
+    text-align: center;
+    background-color: rgb(203, 255, 198);
+}
