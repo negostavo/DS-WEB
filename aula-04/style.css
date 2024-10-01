@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(142, 255, 232);
+}
+h1{
+    color:white;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 20px;
+}
+.minha-div{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+#minha-div{
+    background-color: rgb(157, 213, 246);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
