@@ -1,0 +1,11 @@
+.videos{
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+}
+
+body{
+
+    text-align: center;
+    background-color: rgb(162, 156, 156);
+}
