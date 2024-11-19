@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+
+<style>
+    .button:hover:hover{
+        background-color: lightgreen;
+        width: 100px;
+        height: 100px;
+    }
+
+    .button-active:active{
+        transform: scale(0.95);
+    }
+    .input-focus:focus{
+        background-color: rgb(188, 140, 240);
+        color: rgb(255, 0, 0);
+    }
+    .radio-check:checked{
+        transform: scale(1.5);
+    }
+    .checkbox-checked:checked{
+        transform: scale(1.5);
+    }
+    a:link{
+        color: purple;
+    }
+    a:visited{
+        color:rgb(0, 0, 0);
+    }
+    .div-vazia{
+        height: 100%;
+        width: 100%;
+        background-color: purple
+        
+    }
+    div:empty{
+        display:none;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <div>
+        <h3> Exemplo de hover</h3>
+        <button class="button-hover">Clique aqui</button>
+    </div>
+    <div>
+        <h3> Exemplo de active</h3>
+        <button class="button-active">Clique aqui</button>
+    </div>
+
+    <div>
+        <h3> Exemplo de input-focus</h3>
+        <input type="text" class="input-focus" placeholder ="clique aqui"></input>
+    </div>
+    <div>
+        <h3> Exemplo de Checked</h3>
+        <label> Radio button</label>
+        <input type = "radio" class="radio-check"></input> 
+        <input type = "radio" class="radio-check"></input>
+        <br>
+        <label > Checked</label>
+        <input type="checkbox" class="checkbox-checked">
+    </div>
+    <div>
+        <h3>exemplo de pseudoclasse para link</h3>
+        <a href="a">link 1</a>
+        <a href="a">link 2</a>
+        <a href="a">link 3</a>
+        <a href="a">link 4</a>
+        <a href="a">link 5</a>
+        <a href="a">link 6</a>
+        <a href="a">link 7</a>
+        <a href="a">link 8</a>
+        <a href="a">link 9</a>
+        <a href="a">link 10</a>
+    </div>
+    <div class="div-vazia">
+
+    </div>
+
+</body>
+</html>

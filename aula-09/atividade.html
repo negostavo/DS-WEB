@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo Transition</title>
+<style>
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #d2eaf1); /* Tons de azul suave */
+    display: flex; /* Ativa o layout flexbox */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 15px; /* Espaçamento entre os elementos */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    min-height: 100vh; /* Ocupa a altura total da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcb91; /* Laranja pastel */
+    transition: background-color 2s ease, transform 2s ease;
+    border-radius: 15px;
+    color: #3c3c3c; /* Cor do texto em contraste */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.box:hover {
+    background-color: #ffe6a7; /* Amarelo pastel suave */
+    transform: scale(1.2);
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #a4c3b2; /* Verde suave */
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.box2:hover {
+    transform: scale(1.5);
+}
+
+.box3 {
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(90deg, #91d1c2, #ffe1c6, #a4c3b2); /* Gradiente harmonioso */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: #ffc3a0; /* Tom suave de coral */
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.box4:hover {
+    transform: rotate(45deg);
+}
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: #ff9aa2; /* Rosa pastel */
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.box5:hover {
+    transform: translate(50px, 0);
+}
+
+@keyframes moverEfeito {
+    0% {
+        transform: translateX(0);
+        background-color: #ffcb91;
+    }
+    50% {
+        transform: translateX(200px);
+        background-color: #ffe6a7;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #ffcb91;
+    }
+}
+
+.animado {
+    width: 100px;
+    height: 100px;
+    background-color: #d4a5a5; /* Tom suave de rosa antigo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.animado:hover {
+    animation: moverEfeito 4s ease-in-out infinite;
+}
+
+.box6 {
+    width: 100px;
+    height: 100px;
+    background-color: #b0c5c3; /* Verde-azulado suave */
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.box6:hover {
+    opacity: 0.5;
+}
+</style>
+</head>
+<body>
+    <div class="box">Gradientation</div>
+    <div class="box2">Escalation</div>
+    <div class="box3">Gradientation</div>
+    <div class="box4">Rotacion</div>
+    <div class="box5">Movimentation</div>
+    <div class="animado">Animation</div>
+    <div class="box6">Opacitation</div>
+</body>
+</html>
