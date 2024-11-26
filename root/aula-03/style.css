@@ -1,0 +1,44 @@
+input{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 5px;
+    bottom: 10;
+
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+
+}
+form{
+    width: 700px;
+    margin: auto;
+    background-color: rgba(194, 177, 107, 0.749);
+    padding: 50px;
+    border-radius: 100px;
+}
+label{
+    padding: 0;
+    margin: 0;
+}
+button {
+    padding: 10px 20px;
+    background-color: #897a3c; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Garante que o cursor seja uma mão */
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #301c03;
+    cursor: pointer; /* Garante que o cursor seja uma mão ao passar por cima */
+}
+button:active{
+    transform: scale(0.95);
+}

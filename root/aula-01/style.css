@@ -1,0 +1,36 @@
+.tits{
+    text-align: center;
+    background-color: rgb(199, 222, 223);
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+body{
+
+    background-color: rgb(173, 230, 230);
+}
+
+
+.bub{
+    text-align: center;
+   
+    color: rgb(0, 0, 0);
+
+}
+
+.login-errado{
+    text-align: center;
+    
+
+}
+.senha-incorreta{
+    text-align: center;
+    color: black;
+}
+
+.acesso-permitido{
+   text-align: center;
+}

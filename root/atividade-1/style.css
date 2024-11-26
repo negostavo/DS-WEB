@@ -1,0 +1,40 @@
+body {
+    background-color: khaki; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: darkolivegreen; 
+    border-bottom: 2px solid darkolivegreen;
+    padding-bottom: 5px;
+}
+
+p, div, span {
+    color: #333; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+br {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid darkolivegreen;
+}
+
+table th, table td {
+    border: 1px solid darkolivegreen;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: darkkhaki; 
+    color: #fff;
+}

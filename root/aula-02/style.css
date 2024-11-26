@@ -1,0 +1,29 @@
+input{
+    display: block; /*colocar todos acima em outra linha*/
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    bottom: 100;
+
+}
+.titulo{
+    font-size: 50px;
+    text-align: center;
+}
+
+form{
+    width: 550px;
+    margin: auto;
+    background-color: rgb(33, 220, 105);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+label{
+    padding: 0;
+    margin: 0;
+}
+
+.autenticado{
+    text-align: center;
+}
