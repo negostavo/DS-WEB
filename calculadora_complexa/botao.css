@@ -1,0 +1,113 @@
+
+body {
+    font-family: Alegreya Sans;
+
+}
+
+.menu {
+    position:fixed; /* Alinha em relação ao corpo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    background: #cfae5b; /* Marrom suave */
+    width: 3em;
+    height: 3em;
+    border-radius: 5em;
+    margin: 0; /* Remove a margem extra */
+    cursor: pointer;
+    border: 0.5em solid #e1c4a4; /* Marrom claro */
+    transition: top 0.5s ease; /* Transição para mover para baixo */
+   
+}
+
+.menu:after {
+    content: "";
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 1em;
+    height: 0.2em;
+    border-top: 0.6em double #fff;
+    border-bottom: 0.2em solid #fff;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: translateY(0); /* Sempre visível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+    opacity: 0; /* Inicialmente escondido */
+}
+
+.menu li {
+    width: 5em;
+    height: 1.4em;
+    padding: 0.2em;
+    margin-top: 0.2em;
+    text-align: center;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    transition: all 0.5s ease-in-out;
+    background: #e1c4a4; /* Bege suave */
+    opacity: 0; /* Escondido inicialmente */
+    z-index: -1;
+}
+
+.menu:hover ul,
+.menu:hover li {
+    opacity: 1; /* Mostra os itens quando o menu é ativado */
+    z-index: 1;
+}
+
+.menu:hover {
+    top: 15%; /* O menu desce para 15% da altura da tela */
+}
+
+.menu li:hover {
+    background: #9c7f47; /* Marrom mais escuro para o efeito de hover */
+    z-index: 10;
+}
+
+.menu li:nth-of-type(1) {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -1.2em;
+    top: -4.2em;
+}
+
+.menu li:nth-of-type(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 2em;
+    top: -3em;
+}
+
+.menu li:nth-of-type(3) {
+    position: absolute;
+    left: 3.4em;
+    top: 0.3em;
+}
+
+.menu li:nth-of-type(4) {
+    transform: rotate(45deg);
+    position: absolute;
+    left: 2em;
+    top: 3.7em;
+}
+
+.menu li:nth-of-type(5) {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -1.2em;
+    top: 5em;
+}
+
+.menu a {
+    color: inherit; /* Remove a cor azul do link, herdando a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado do link */
+    line-height: 1.5em;
+}
+
+.hint {
+    text-align: center;
+}
