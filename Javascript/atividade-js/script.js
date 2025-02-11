@@ -50,3 +50,56 @@ function mudarCor(){
 
 //lista com if e else
 
+function maioridade() {
+    var idadeInput = document.getElementById('idade');
+    var idade = parseInt(idadeInput.value);
+  
+    console.log(typeof idade);
+  
+    if (idade >= 18) {
+      document.getElementById("resultIdade").innerHTML = "Você é maior de idade.";
+    } else {
+      document.getElementById("resultIdade").innerHTML = "Você é menor de idade.";
+    }
+  }
+
+//segunda lição
+
+function check() {
+    var n1Input = document.getElementById('n1');
+    var n1 = parseInt(n1Input.value);
+  
+    console.log(typeof n1);
+  
+    if (n1 == 0) {
+      document.getElementById("resultn1").innerHTML = "o numero é 0";
+    } else if (n1>0) {
+      document.getElementById("resultn1").innerHTML = "o numero é positivo";
+    } else {
+        document.getElementById("resultn1").innerHTML = "o numero é negativo";
+
+    }
+  }
+  
+//terceira lição
+function loginadm() {
+    usuario = admin;
+    senhacerta = 1234;
+
+    var user = document.getElementById("user").value;
+    var user1 = user
+  
+    var senhaInput = document.getElementById('senha');
+    var senha = parseInt(senhaInput.value);
+  
+    console.log(typeof senha);
+  
+    if (usuario == user1 && senhacerta == senha) {
+      document.getElementById("loginadm").innerHTML = "boas vindas";
+    }else {
+        document.getElementById("loginadm").innerHTML = "usuario ou senha errada";
+
+    }
+  }
+
+
