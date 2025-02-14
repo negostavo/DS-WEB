@@ -77,14 +77,60 @@
 <p id="resultn1"></p>
 
 <!--terceira lição-->
-<h1>insira a senha:</h1>
-<input type="number" id="senha">
+<h1>Login</h1>
+  <input type="text" id="user" placeholder="Usuário">
+  <input type="password" id="senha" placeholder="Senha">
+  <button onclick="loginadm()">Entrar</button>
+  <p id="loginadm"></p>
 
-<h1>insira o usuario:</h1>
-<input type="text" id="user">
+  <!--quarta lição-->
+  <h1>operações matematicas</h1>
+  <input type="number" id="primeiro" placeholder="primeiro numero">
+  <input type="number" id="segundo" placeholder="segundo numero">
+  
+  <select id="operadores">
+    <option value="+">somar</option>
+    <option value="-">subtrair </option>
+    <option value="*">multiplicar</option>
+    <option value="/">dividir</option>
+    </select>
+  <button onclick=operações()>calcular</button>
 
-<button onclick="login()">Clique aqui!!!</button>
-<p id="loginadm"></p>
+  <p id="resultadoOp"></p>
+
+  <!--quinta lição-->
+
+
+  
+
+  <!--sexta lição-->
+  <h1>Encontre o Maior Número</h1>
+  <label for="num1">Número 1:</label>
+  <input type="number" id="num1"><br><br>
+
+  <label for="num2">Número 2:</label>
+  <input type="number" id="num2"><br><br>
+
+  <label for="num3">Número 3:</label>
+  <input type="number" id="num3"><br><br>
+
+  <button onclick="encontrarMaior()">Encontrar Maior</button>
+  <p id="resulteste"></p>
+
+  <!-- setima lição-->
+  <h1>insira os lados do triangulo</h1>
+  <label for="lado1">Lado 1:</label>
+  <input type="number" id="lado1"><br><br>
+
+  <label for="lado2">lado 2:</label>
+  <input type="number" id="lado2"><br><br>
+
+  <label for="lado3">lado 3:</label>
+  <input type="number" id="lado3"><br><br>
+
+  <button onclick="tipo()">tipo de triangulo é</button>
+  <p id="triangulo"></p>
+
 
 <script src="script.js"></script>
 

@@ -39,13 +39,15 @@ function porc(){
 
 }
 //quinta lição
-function mudarCor(){
+function mudarCor() {
+  const elemento = document.getElementById('area');
+  const corAtual = elemento.style.backgroundColor;
 
-    var a = window.document.getElementById('area');
-
-        a.innerText = 'Clicou!';
-        a.style.background = 'red';
-
+  if (corAtual === 'green') {
+    elemento.style.backgroundColor = 'red';
+  } else {
+    elemento.style.backgroundColor = 'green';
+  }
 }
 
 //lista com if e else
@@ -83,23 +85,116 @@ function check() {
   
 //terceira lição
 function loginadm() {
-    usuario = admin;
-    senhacerta = 1234;
-
-    var user = document.getElementById("user").value;
-    var user1 = user
+    const usuarioCorreto = "admin";
+    const senhaCorreta = "1234";
   
-    var senhaInput = document.getElementById('senha');
-    var senha = parseInt(senhaInput.value);
+    const user = document.getElementById("user").value;
+    const senhaInput = document.getElementById('senha');
+    const senha = senhaInput.value;
   
-    console.log(typeof senha);
-  
-    if (usuario == user1 && senhacerta == senha) {
-      document.getElementById("loginadm").innerHTML = "boas vindas";
-    }else {
-        document.getElementById("loginadm").innerHTML = "usuario ou senha errada";
-
+    if (usuarioCorreto === user && senhaCorreta === senha) {
+      document.getElementById("loginadm").textContent = "Boas vindas!";
+    } else {
+      document.getElementById("loginadm").textContent = "Usuário ou senha incorretos.";
     }
   }
+  
+//quarta lição
+function operações(){
+    const sinal = document.getElementById("operadores").value;
 
+    var primeiroInput = document.getElementById('primeiro');
+    var primeiro = parseInt(primeiroInput.value);
+    primeiro = parseInt(primeiro);
+
+
+    var segundoInput = document.getElementById('segundo');
+    var segundo = parseInt(segundoInput.value);
+    segundo = parseInt(segundo);
+
+
+    if (sinal === "+") {
+        var resultado = (primeiro+segundo);
+        document.getElementById("resultadoOp").innerHTML = "seu resultado é: " + resultado;
+
+    } else if (sinal === "-"){
+        var resultado = (primeiro-segundo);
+        document.getElementById("resultadoOp").innerHTML = "seu resultado é: " + resultado;
+
+
+    }else if (sinal === "*"){
+        var resultado = (primeiro*segundo);
+        document.getElementById("resultadoOp").innerHTML = "seu resultado é: " + resultado;
+
+
+    }else if (sinal === "/"){
+        var resultado = (primeiro/segundo);
+        document.getElementById("resultadoOp").innerHTML = "seu resultado é: " + resultado;
+
+
+    }
+
+
+
+}
+
+//quinta lição
+function calc () {
+    var teste1 = document.getElementById("teste").value;
+
+    console.log(typeof teste1);
+
+    teste1 = parseInt(teste1);
+
+
+
+    if (teste1 % 2 == 0) {
+        document.getElementById("resulteste").innerHTML = "O número " + teste1 + " é par.";
+    } else {
+        document.getElementById("resulteste").innerHTML = "O número " + teste1 + " é ímpar.";
+    }
+}
+
+//sexta lição
+function encontrarMaior() {
+   
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    const num3 = parseFloat(document.getElementById("num3").value);
+
+    let maior;
+    if (num1 >= num2 && num1 >= num3) {
+      maior = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+      maior = num2;
+    } else {
+      maior = num3;
+    }
+  
+
+    document.getElementById("resulteste").textContent = "O maior número é: " + maior;
+  }
+  function tipo() {
+   
+    const lado1 = parseFloat(document.getElementById("lado1").value);
+    const lado2 = parseFloat(document.getElementById("lado2").value);
+    const lado3 = parseFloat(document.getElementById("lado3").value);
+
+
+    if (isNaN(lado1) || isNaN(lado2) || isNaN(lado3) || lado1 <= 0 || lado2 <= 0 || lado3 <= 0 ||
+        lado1 + lado2 <= lado3 || lado1 + lado3 <= lado2 || lado2 + lado3 <= lado1) {
+        document.getElementById("triangulo").innerHTML = "Valores inválidos ou não formam um triângulo.";
+        return;
+  }
+  
+      if (lado1 === lado2 && lado1 === lado3) {
+        document.getElementById("triangulo").innerHTML = "O triangulo é equilatero "; 
+
+      } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+        document.getElementById("triangulo").innerHTML = "O trianguo é isoceles ";
+
+      } else {
+        document.getElementById("triangulo").innerHTML = "O triangulo é escaleno " ; 
+      }
+    }
 
