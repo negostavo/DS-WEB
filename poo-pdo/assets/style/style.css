@@ -1,0 +1,143 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px; /* Mantém a largura do container */
+}
+
+/* Código CSS do menu horizontal */
+ul {
+padding-inline-start: 0em;
+width: 100%;
+float: left;
+text-align: center;
+}
+
+.menu li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    list-style: none;
+}
+
+.menu li .meumenu {
+    font-family: 'open_sansbold';
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #4c4c4c;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom .3s linear;
+}
+
+.menu li .meumenu-active {
+    border-bottom: 4px solid #4c4c4c;
+}
+
+.menu li .meumenu:hover {
+    border-bottom: 4px solid rgb(255, 132, 0);
+}
+
+
+
+.formulario {
+
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+    background: #ffcbb3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(255, 132, 0);
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input:hover[type=submit] {
+    background-color: rgb(255, 162, 0);
+}
+
+/*definindo o estilo da tabela de dados dos elements*/
+#clientes {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#clientes td, #clientes th {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f4f4f4;
+}
+
+#clientes tr:nth-child(even){background-color: #ffffff;}
+
+#clientes tr:hover {background-color: #fc9c5b;}
+
+#clientes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff6600;
+  color: white;
+}
+
+#clientes a {
+    text-decoration: none;
+    color:black;
+}
+#clientes a:hover {
+    text-decoration: none;
+    color:rgb(0, 76, 255);
+}
+.erro-input{
+    color: red;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cadastrados{
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.tudo{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    width: 850px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
