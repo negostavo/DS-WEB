@@ -36,7 +36,7 @@ text-align: center;
 }
 
 .menu li .meumenu:hover {
-    border-bottom: 4px solid rgb(255, 132, 0);
+    border-bottom: 4px solid dodgerblue;
 }
 
 
@@ -45,7 +45,7 @@ text-align: center;
 
     padding: 20px 30px 30px 30px;
     border-radius: 8px;
-    background: #ffcbb3;
+    background-color: rgba(21, 21, 21, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 
@@ -74,7 +74,7 @@ input[type=submit] {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: rgb(255, 132, 0);
+    background-color:dodgerblue;
     color: white;
     font-size: 16px;
     border-radius: 4px;
@@ -83,7 +83,7 @@ input[type=submit] {
 }
 
 input:hover[type=submit] {
-    background-color: rgb(255, 162, 0);
+    background-color:deepskyblue;
 }
 
 /*definindo o estilo da tabela de dados dos elements*/
@@ -102,13 +102,13 @@ input:hover[type=submit] {
 
 #clientes tr:nth-child(even){background-color: #ffffff;}
 
-#clientes tr:hover {background-color: #fc9c5b;}
+#clientes tr:hover {background-color: dodgerblue;}
 
 #clientes th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #ff6600;
+  background-color: dodgerblue;
   color: white;
 }
 
@@ -133,7 +133,7 @@ input:hover[type=submit] {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .tudo{
-    background-color: #ffffff;
+    background-color: #c6c6c6;
     border-radius: 10px;
     margin: 15px;
     padding: 10px;
@@ -141,3 +141,35 @@ input:hover[type=submit] {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
 }
+.formulario-login {
+
+    float:left;
+    margin-right: 0px;
+    margin-left:350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+}
+input.radio{
+    border-radius: 30px;
+    width: 10px;
+}
+input.botao {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color:dodgerblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.botao:hover[type=submit] {
+    background-color:deepskyblue;
+}
+.informa{
+    color: white;
+}
+

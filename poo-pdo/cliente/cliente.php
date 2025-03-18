@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['emailAdmin']) and !isset($_SESSION['senhaAdmin'])){
+        header('Location: login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,6 +20,7 @@
                 <li><a href="../index.php" class="meumenu  " title="Home">Home</a></li>
                 <li><a href="cliente.php" class="meumenu meumenu-active" title="Clients">Clientes </a></li>
                 <li><a href="../produto/produto.php" class="meumenu" title="Products">Produtos </a></li>
+                <li><a href="../admin.php" class="meumenu" title="Produtos">Administradores </a></li>
 
             </ul>
         
@@ -22,15 +29,15 @@
             <hr>
             <div class="formulario">
                 <form action="insertion.php" method="POST" name = "formulario" onsubmit= "return validarDadosCliente()">
-                    <label for="nome">Nome: </label>
+                    <label style="color: white;" for="nome">Nome: </label>
                     <input type="text" name="nome" placeholder="Digite o nome do cliente" required>
                     <p class="erro-input" id="erro-nome"></p>
                     
-                    <label for="email">E-mail: </label>
+                    <label style="color: white;" for="email">E-mail: </label>
                     <input type="text" name="email" placeholder="Digite o E-mail do cliente" required>
                     <p class="erro-input" id="erro-email"></p>
                     
-                    <label for="observacao">observação do ciente</label>
+                    <label style="color: white;" for="observacao">observação do ciente</label>
                     <textarea name="observacao" id="observacao" cols="30" rows="4" placeholder="Faça um observação" required></textarea>
                     <input type="submit">    
                     <p class="erro-input" id="erro-observacao"></p>
@@ -48,7 +55,7 @@
                     <?php
                         include '../conexao.php';
 
-                        echo "<h2>Clientes cadastrados:</h2>";
+                        echo "<h2 style='color: white;''>Clientes cadastrados:</h2>";
                         $dados = $db->query("SELECT * FROM clientes");
                         $todos = $dados->fetchAll(PDO::FETCH_ASSOC);
                         foreach($todos as $linha){

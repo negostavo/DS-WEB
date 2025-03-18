@@ -46,19 +46,19 @@
                     
                     <label for="codigo">codigo: </label><br>
                     <input type="text" name="codigoProduto" value="<?= $codigoProduto;?>">
-                    <p class="erro-input" id="erro-codigo"></p>
+                    <p class="erro-input" id="cod"></p>
 
                     <label for="codigo">nome: </label><br>
                     <input type="text" name="nomeProduto" value="<?= $nomeProduto;?>">
-                    <p class="erro-input" id="erro-nome"></p>
+                    <p class="erro-input" id="nome"></p>
 
                     <label for="estoque">estoque: </label><br>
-                    <input type="text" name="estoque" id="validarInput" value="<?= $estoque;?>">
+                    <input type="text" name="estoque" id="estoque" value="<?= $estoque;?>">
                     
                     <p class="erro-input" id="erro-estoque"></p>
 
                     <label for="preco">preco: </label><br>
-                    <input type="text" name="preco" id="validarInput" value="<?= $preco;?>">
+                    <input type="text" name="preco" id="preco" value="<?= $preco;?>">
                     <p class="erro-input" id="erro-preco"></p>
                     
                     

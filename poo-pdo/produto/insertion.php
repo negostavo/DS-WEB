@@ -1,10 +1,7 @@
 <?php
 
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
-    echo "<script>
-    alert('está faltando o método post')
-    window.location.href = 'produto.php';
-    </script>";
+    echo "<script> window.location.href = 'produto.php';</script>";
 }
 
 $codigoProduto =$_POST['codigoProduto'];
