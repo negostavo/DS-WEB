@@ -5,7 +5,8 @@
         <th>Nome:</th>
         <th>Preço:</th>
         <th>Estoque:</th>
-        <th></th>
+        <th>Cadastrar</th>
+        <th>Excluir</th>
     </tr>
     <?php
         foreach($dados as $dado){

@@ -1,4 +1,5 @@
 <div class="container">
+    <div class="formulario">
     <form action="cadastrar" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
         <label>Nome do Produto:</label>
         <input type="text" name="nomeProduto" id="nomeProduto">
@@ -11,6 +12,7 @@
         <br>
         <input type="submit" value="Cadastrar">
     </form>
+    </div>
 </div>
 
 <script>
